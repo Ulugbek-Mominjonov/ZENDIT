@@ -4,11 +4,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Zendit</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  
+  <header class="site-header">
+    <nav class="site-nav">
+      <div class="container">
+        <a class="logo">
+          <img src="img/Group 1.png" alt="Logo img" width="61" height="50">
+          <span>Zendit</span>
+        </a>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <button class="nav-button" onclick="dropdown('Shipping')">Shipping</button>
+            <div class="product-list" id="Shipping">
+              <a href="#" class="product-link">About</a>
+              <a href="#" class="product-link">Team</a>
+              <a href="#" class="product-link">Blog</a>
+              <a href="#" class="product-link">Careers</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <button class="nav-button" onclick="dropdown('Tracking')">Tracking</button>
+            <div class="product-list" id="Tracking">
+              <a href="#" class="product-link">About</a>
+              <a href="#" class="product-link">Team</a>
+              <a href="#" class="product-link">Blog</a>
+              <a href="#" class="product-link">Careers</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <button class="nav-button" onclick="dropdown('Support')">Support</button>
+            <div class="product-list" id="Support">
+              <a href="#" class="product-link">About</a>
+              <a href="#" class="product-link">Team</a>
+              <a href="#" class="product-link">Blog</a>
+              <a href="#" class="product-link">Careers</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <button class="nav-button" onclick="dropdown('Account')">Account</button>
+            <div class="product-list" id="Account">
+              <a href="#" class="product-link">About</a>
+              <a href="#" class="product-link">Team</a>
+              <a href="#" class="product-link">Blog</a>
+              <a href="#" class="product-link">Careers</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="registrition">
+          <a href="#" class="sign-in">Sign in</a>
+          <a href="#" class="register">Register</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 </body>
 </html>
