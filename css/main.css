@@ -404,12 +404,11 @@ img{
 .companies{
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
   margin-top: 70px;
+  justify-content: space-between;
   margin-bottom: 150px;
   padding: 60px 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #FFFFFF;
   box-shadow: 8px 8px 100px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
