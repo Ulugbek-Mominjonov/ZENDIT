@@ -154,29 +154,26 @@ img{
   border-radius: 5px;
 }
 /* sends section  */
-.sends{
+.sends-container {
+  display: flex;
+  align-items: center;
   position: relative;
+  overflow: hidden;
 }
-.sends::after {
-  position: absolute;
-  right: 0;
-  top: 0;
+.sends-container::after {
+  position: relative;
+  right: -78px;
   display: inline-block;
   content: "";
   width: 820px;
-  height: 820px;
+  height: 831px;
   background-image: url("../img/Group\ 33.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.sends-container {
-  padding-top: 190px;
-  padding-bottom: 211px;
-}
 .sends-wrapper {
   width: 686px;
-  z-index;
-  /* margin-right: 138px; */
+  margin-right: 100px;
 }
 .sends-title {
   margin: 0;
@@ -196,7 +193,7 @@ img{
 /* track */
 .track-wrapper {
   position: relative;
-  top: -112px;
+  top: -145px;
   max-width: 1489px;
   padding: 40px 70px 70px 70px;
   background: #ffffff;
