@@ -55,7 +55,7 @@ body {
   background: #ffffff;
 }
 .container {
-  max-width: 1705px;
+  max-width: 1675px;
   padding-left: 40px;
   padding-right: 40px;
   margin-left: auto;
@@ -79,7 +79,7 @@ img{
 /* SITE-HEADER */
 .site-header {
   background: #f6f8ff;
-  padding-bottom: 88px;
+  padding-bottom: 112px;
 }
 .header-container {
   display: flex;
@@ -99,7 +99,7 @@ img{
 }
 .logo-text {
   margin-left: 13px;
-  margin-right: 80px;
+  margin-right: 150px;
 }
 
 /* nav-list */
@@ -107,7 +107,7 @@ img{
   position: relative;
 }
 .nav-item + .nav-item {
-  margin-left: 50px;
+  margin-left: 62px;
 }
 .nav-button {
   display: flex;
@@ -154,26 +154,35 @@ img{
   border-radius: 5px;
 }
 /* sends section  */
-.sends {
-  height: auto;
+.sends{
+  position: relative;
+}
+.sends::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  content: "";
+  width: 820px;
+  height: 820px;
   background-image: url("../img/Group\ 33.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 100% center;
-  background-size: 48%;
 }
 .sends-container {
-  padding-top: 60px;
-  padding-bottom: 112px;
+  padding-top: 190px;
+  padding-bottom: 211px;
 }
 .sends-wrapper {
-  width: 672px;
-  padding-top: 70px;
+  width: 686px;
+  z-index;
+  /* margin-right: 138px; */
 }
 .sends-title {
   margin: 0;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 90px;
+  font-size: 72px;
+  line-height: 108px;
   color: #172f53;
 }
 .sends-text {
@@ -187,9 +196,9 @@ img{
 /* track */
 .track-wrapper {
   position: relative;
-  top: -124px;
+  top: -112px;
   max-width: 1489px;
-  padding: 40px 60px 60px 60px;
+  padding: 40px 70px 70px 70px;
   background: #ffffff;
   box-shadow: 8px 8px 100px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -208,30 +217,26 @@ img{
   font-weight: normal;
 }
 .track-form {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  column-gap: 95px;
+  grid-template-columns: 913px auto;
 }
  .tarck-input {
-  width: 680px;
-  padding: 25px 34px;
+  padding: 31px 40px;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 25px;
+  line-height: 37px;
   color: #9F9F9F;
   background: #efefef;
   border-radius: 10px;
   border: none;
 }
 .track-button{
-  padding: 25px 34px;
   background: #21D8E3;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 25px;
+  line-height: 37px;
   color: #FFFFFF;
   border: none;
 }
@@ -242,26 +247,26 @@ img{
   display: grid;
   margin: 0;
   padding: 0;
-  grid-template-columns: repeat(auto-fit, 283px);
-  gap: 45px;
+  grid-template-columns: repeat(auto-fit, 350px);
+  gap: 65px;
   justify-content: center;
   list-style-type: none;
 }
 .section-title{
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 25px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 45px;
   text-align: center;
   color: #A9A9A9;
 }
 .section-heading{
-  width: 750px;
+  width: 852px;
   margin: 0 auto;
   margin-bottom: 60px;
   font-weight: bold;
-  font-size: 47px;
-  line-height: 65px;
+  font-size: 52px;
+  line-height: 78px;
   text-align: center;
   color: #172F53;
 }
@@ -275,12 +280,12 @@ img{
   display: flex;
   flex-direction: column;
   padding: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 76px;
   background: #F6F8FF;
   border-radius: 20px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 30px;
   color: #A9A9A9;
   transition: .5s;
 }
@@ -302,14 +307,14 @@ img{
   margin-bottom: 34px;
   order: -2;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 43px;
+  font-size: 32px;
+  line-height: 48px;
   color: #172F53;
   white-space: nowrap;
 }
 .decoration-img{
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius:  50%;
   background-color: #fff;
   background-position: center center;
@@ -342,44 +347,43 @@ img{
 
 /* create-account */
 .create-account{
-  display: flex;
+  width: 100%;
+  display: grid;
+  column-gap: 36px;
+  grid-template-columns: 950px auto;
   align-items: center;
-  justify-content: space-between;
   margin-top: 120px;
-}
-.account-date{
-  width: 700px;
 }
 .account-title{
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 65px;
+  font-size: 52px;
+  line-height: 78px;
   color: #172F53;
 }
 .acount-text{
-  margin-bottom: 20px;
+  margin-bottom: 65px;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 33px;
+  font-size: 30px;
+  line-height: 45px;
   color: #7D7D7D;
 }
 .account-link{
   display: inline-block;
-  padding: 23px 40px;
+  padding: 31px 73px;
   background: #21D8E3;
   border-radius: 10px;
   font-weight: bold;
-  font-size: 19px;
-  line-height: 19px;
+  font-size: 25px;
+  line-height: 37px;
   color: #FFFFFF;  
 }
 .account-link::after{
   content: "";
   display: inline-block;
-  width: 18px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   margin-left: 8px;
   background-image: url("../img/Vector\ \(1\).png");
   background-repeat: no-repeat;
@@ -396,10 +400,10 @@ img{
 
 /* Partnership */
 .Partnership{
-  margin-top: 100px;
+  margin-top: 178px;
 }
 .company-heading{
-  font-size: 43px;
+  width: 697px;
 }
 .companies{
   max-width: 1489px;
@@ -423,8 +427,8 @@ img{
   background-position: left bottom;
 }
 .footer-container{
-  padding-top: 60px;
-  padding-bottom: 160px;
+  padding-top: 95px;
+  padding-bottom: 280px;
 }
 .footer-list{
   align-items: flex-start;
@@ -435,10 +439,10 @@ img{
 }
 .item-title{
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 54px;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 27px;
+  line-height: 40px;
   color: #FFFFFF;
 }
 .footer-list-child{
@@ -446,12 +450,12 @@ img{
   align-items: flex-start;
 }
 .footer-list-child-item + .footer-list-child-item{
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .footer-list-child-item a{
   font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 25px;
+  line-height: 37px;
   color: #FFFFFF;
   text-decoration: none;
 }
