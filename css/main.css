@@ -154,26 +154,21 @@ img{
   border-radius: 5px;
 }
 /* sends section  */
-.sends-container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-.sends-container::after {
-  position: relative;
-  right: -78px;
-  display: inline-block;
-  content: "";
-  width: 820px;
-  height: 831px;
+.sends{
+  max-width: 1920px;
+  margin: 0 auto;
   background-image: url("../img/Group\ 33.png");
-  background-size: cover;
+  background-position: 107% center;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+.sends-container{
+  padding-top: 180px;
+  padding-bottom: 211px;
 }
 .sends-wrapper {
   width: 686px;
-  margin-right: 100px;
+  margin-right: 138px;
 }
 .sends-title {
   margin: 0;
@@ -387,13 +382,6 @@ img{
   background-size: contain;
   vertical-align: middle;
 }
-/* .account-img{
-  width: 629px;
-  height: auto;
-  background-image: url("../img/Group\ 34.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
 
 /* Partnership */
 .Partnership{
@@ -420,8 +408,7 @@ img{
   background-color: #172F53;
   background-image: url("../img/image\ 14.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left bottom;
+  background-position: bottom;
 }
 .footer-container{
   padding-top: 95px;
