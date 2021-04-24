@@ -426,7 +426,7 @@ img{
 .site-footer{
   background-color: #172F53;
   background-image: url("../img/image14.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: bottom;
 }
 .footer-container{
