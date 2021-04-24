@@ -54,6 +54,16 @@ body {
   color: #172f53;
   background: #ffffff;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
   max-width: 1675px;
   padding-left: 40px;
@@ -71,6 +81,11 @@ body {
 }
 .link {
   text-decoration: none;
+  transition: 0.3s;
+}
+.link:hover{
+  background-color: rgba(33, 216, 227, 0.5);
+  color: rgba(34, 34, 34,0.6);
 }
 img{
   display: block;
@@ -115,6 +130,11 @@ img{
   background-color: transparent;
   border: none;
   outline: none;
+  transition: 0.3s;
+}
+.nav-button:hover{
+  box-shadow: inset 0 -1px 0 0 rgb(34, 34, 34);
+  color: rgba(34, 34, 34, 0.7);
 }
 .nav-button::after {
   content: "";
@@ -155,7 +175,7 @@ img{
 }
 /* sends section  */
 .sends{
-  background-image: url("../img/Group\ 33.png");
+  background-image: url("../img/Group33.png");
   /* background-position: 107% center; */
   /* background-size: contain; */
   background-repeat: no-repeat;
@@ -324,16 +344,16 @@ img{
   font-weight: bold;
 }
 .Local{
-  background-image: url("../img/Group\ 23.png");
+  background-image: url("../img/Group23.png");
 }
 .Airplanings{
-  background-image: url("../img/Group\ 24.png");
+  background-image: url("../img/Group24.png");
 }
 .Speedrunner{
-  background-image: url("../img/Group\ 25.png");
+  background-image: url("../img/Group25.png");
 }
 .Racers{
-  background-image: url("../img/Group\ 21.png");
+  background-image: url("../img/Group21.png");
 }
 
 /* create-account */
@@ -376,7 +396,7 @@ img{
   width: 20px;
   height: 20px;
   margin-left: 8px;
-  background-image: url("../img/Vector\ \(1\).png");
+  background-image: url("../img/Vector1.png");
   background-repeat: no-repeat;
   background-size: contain;
   vertical-align: middle;
@@ -405,7 +425,7 @@ img{
 /* site-footer */
 .site-footer{
   background-color: #172F53;
-  background-image: url("../img/image\ 14.png");
+  background-image: url("../img/image14.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -435,10 +455,16 @@ img{
 .footer-list-child-item + .footer-list-child-item{
   margin-top: 30px;
 }
-.footer-list-child-item a{
+
+.footer-list-child-item a, .footer-list-child-item address{
   font-weight: 500;
   font-size: 25px;
   line-height: 37px;
   color: #FFFFFF;
   text-decoration: none;
+  transition: 0.3s;
+}
+.footer-list-child-item a:hover{
+  box-shadow: inset 0 -2px 0 0 #fff;
+  color: rgba(255, 255, 255, 0.6);
 }
